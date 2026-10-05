@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multilingual Text & Speech Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            🌐 MultiAnalyze
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">AI POWERED LANGUAGE ANALYSIS</p>
+
+            <h1>
+                Multilingual Text & 
+                <span>Speech Analysis</span>
+            </h1>
+
+            <p class="hero-text">
+                Analyze text and speech in multiple languages.
+                Discover sentiment, keywords, word count and
+                other useful language insights.
+            </p>
+
+            <a href="#analyzer" class="hero-button">
+                Start Analysis →
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+            <div class="circle">🌍</div>
+            <h3>Multiple Languages</h3>
+            <p>Analyze English, Telugu, Hindi, Tamil and more.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Analyzer Section -->
+    <section class="analyzer-section" id="analyzer">
+
+        <div class="section-heading">
+            <p>SMART ANALYZER</p>
+            <h2>Analyze Your Content</h2>
+            <span>
+                Enter text or use your microphone to begin analysis.
+            </span>
+        </div>
+
+
+        <div class="analyzer-container">
+
+            <!-- Input Card -->
+            <div class="input-card">
+
+                <div class="input-header">
+
+                    <h3>Input Content</h3>
+
+                    <select id="language">
+                        <option value="English">English</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Malayalam">Malayalam</option>
+                    </select>
+
+                </div>
+
+
+                <textarea
+                    id="textInput"
+                    placeholder="Type or paste your text here..."
+                ></textarea>
+
+
+                <div class="input-buttons">
+
+                    <button id="analyzeBtn" class="analyze-btn">
+                        🔍 Analyze Text
+                    </button>
+
+                    <button id="voiceBtn" class="voice-btn">
+                        🎙 Start Speech
+                    </button>
+
+                    <button id="clearBtn" class="clear-btn">
+                        Clear
+                    </button>
+
+                </div>
+
+                <p id="speechStatus" class="speech-status"></p>
+
+            </div>
+
+
+            <!-- Results Card -->
+            <div class="result-card">
+
+                <div class="result-header">
+                    <h3>Analysis Results</h3>
+                    <span id="resultLanguage">English</span>
+                </div>
+
+
+                <div class="result-grid">
+
+                    <div class="result-box">
+                        <div class="result-icon">📝</div>
+                        <p>Words</p>
+                        <h2 id="wordCount">0</h2>
+                    </div>
+
+
+                    <div class="result-box">
+                        <div class="result-icon">🔤</div>
+                        <p>Characters</p>
+                        <h2 id="charCount">0</h2>
+                    </div>
+
+
+                    <div class="result-box">
+                        <div class="result-icon">📄</div>
+                        <p>Sentences</p>
+                        <h2 id="sentenceCount">0</h2>
+                    </div>
+
+
+                    <div class="result-box">
+                        <div class="result-icon">😊</div>
+                        <p>Sentiment</p>
+                        <h2 id="sentiment">Neutral</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="keywords">
+
+                    <h3>🔑 Keywords</h3>
+
+                    <div id="keywordList">
+                        <span>No keywords yet</span>
+                    </div>
+
+                </div>
+
+
+                <div class="summary">
+
+                    <h3>📊 Analysis Summary</h3>
+
+                    <p id="summaryText">
+                        Enter text and click "Analyze Text" to see
+                        the analysis results.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features-section" id="features">
+
+        <div class="section-heading">
+
+            <p>POWERFUL FEATURES</p>
+
+            <h2>What This System Can Do</h2>
+
+        </div>
+
+
+        <div class="features-container">
+
+            <div class="feature">
+                <div>🌐</div>
+                <h3>Multilingual Support</h3>
+                <p>
+                    Supports multiple Indian and international
+                    languages.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <div>🎙️</div>
+                <h3>Speech Recognition</h3>
+                <p>
+                    Convert speech into text using your microphone.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <div>😊</div>
+                <h3>Sentiment Analysis</h3>
+                <p>
+                    Identifies whether the text is positive,
+                    negative or neutral.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <div>🔑</div>
+                <h3>Keyword Extraction</h3>
+                <p>
+                    Finds important words from the entered content.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <p>ABOUT THE PROJECT</p>
+
+            <h2>
+                Intelligent Language
+                Understanding
+            </h2>
+
+            <p>
+                The Multilingual Text and Speech Analysis System
+                is a web-based application designed to analyze
+                text and speech in different languages.
+            </p>
+
+            <p>
+                The system converts speech into text and provides
+                useful information such as word count, character
+                count, sentence count, sentiment and keywords.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🌐 MultiAnalyze</h3>
+
+        <p>
+            Multilingual Text & Speech Analysis System
+        </p>
+
+        <p class="copyright">
+            © 2026 MultiAnalyze. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
